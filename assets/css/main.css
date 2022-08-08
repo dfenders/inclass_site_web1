@@ -1,0 +1,52 @@
+body {
+    margin: 0; 
+    background:#BC511B;
+    font-family:sans-serif;
+}
+
+ul {
+    list-style:none;
+}
+
+header {    
+    height:100px;
+}
+
+svg{
+    fill:white;
+}
+
+main, nav, footer a{
+    color:white;
+}
+
+main{
+    text-align:center;
+}
+
+h1{
+    font-family:serif;
+}
+
+h1#main_title{
+    font-size:72px;
+}
+
+p{
+    font-size:20px;
+}
+
+button{
+    background:#333;
+    color:white;
+    font-size:20px;
+}
+
+ul.faq li{
+    background:white;
+    color:black;
+}
+
+footer{
+    background:linear-gradient(white,#BC511B);
+}
