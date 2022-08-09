@@ -1,35 +1,28 @@
-body {
-    margin: 0; 
-    background:#BC511B;
+body{
+    margin: 0;
+    background:#BF5322;  
+    color:white; 
     font-family:sans-serif;
 }
 
-ul {
-    list-style:none;
-}
-
-header {    
-    height:100px;
-}
-
-svg{
-    fill:white;
-}
-
-main, nav, footer a{
-    color:white;
-}
-
-main{
-    text-align:center;
-}
-
-h1{
+h1, h2, h3{
     font-family:serif;
 }
 
 h1#main_title{
     font-size:72px;
+}
+
+a{
+    color:white;
+}
+
+ul{
+    list-style:none;
+}
+
+svg{
+    fill:white;
 }
 
 p{
@@ -42,11 +35,19 @@ button{
     font-size:20px;
 }
 
+header{
+    height:100px;
+}
+
+main{
+    text-align:center;
+}
+
 ul.faq li{
     background:white;
     color:black;
 }
 
 footer{
-    background:linear-gradient(white,#BC511B);
+    background:linear-gradient(white, #BF5322);    
 }
