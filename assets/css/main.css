@@ -12,6 +12,10 @@ header {
     height:100px;
 }
 
+nav li.active::before{
+    content:'►';
+}
+
 svg{
     fill:white;
 }
@@ -45,6 +49,10 @@ button{
 ul.faq li{
     background:white;
     color:black;
+}
+
+ul.faq li div::before{
+    content:'►';
 }
 
 footer{
