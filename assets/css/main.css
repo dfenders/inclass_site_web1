@@ -61,34 +61,34 @@ h1#main_title{
 }
 
 .cap{
-width:15px;
-border-bottom:15px solid white;
-border-bottom-left-radius:100%;
-border-top-left-radius:100%;
+    width:15px;
+    border-bottom:15px solid white;
+    border-bottom-left-radius:100%;
+    border-top-left-radius:100%;
 }
 
 .cap2{  
-border:7.5px solid white;
-border-left-color:transparent;
+    border:7.5px solid white;
+    border-left-color:transparent;
 }
 
 .body{
-width:40px;
-border-bottom:15px solid white;
+    width:40px;
+    border-bottom:15px solid white;
 }
 
 .arrow{
-border:7.5px solid white;
-border-bottom-color:transparent;
-border-top-color:transparent;
-border-right-color:transparent;
+    border:7.5px solid white;
+    border-bottom-color:transparent;
+    border-top-color:transparent;
+    border-right-color:transparent;
 }
 
 .arrow2{
-width:15px;
-border-bottom:15px solid white;
-border-bottom-right-radius:100%;
-border-top-right-radius:100%;
+    width:15px;
+    border-bottom:15px solid white;
+    border-bottom-right-radius:100%;
+    border-top-right-radius:100%;
 }
 
 p{
