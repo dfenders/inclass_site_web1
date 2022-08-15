@@ -1,3 +1,7 @@
+* {
+    box-sizing:border-box;
+}
+
 body {
     margin: 0; 
     background:#BC511B;
@@ -6,10 +10,20 @@ body {
 
 ul {
     list-style:none;
+    padding: 0;
+    margin:0;
 }
 
 header {    
     height:100px;
+}
+
+nav{
+    padding:10px;
+}
+
+nav li{
+    padding:15px 10px;
 }
 
 nav li.active::before{
@@ -26,14 +40,55 @@ main, nav, footer a{
 
 main{
     text-align:center;
+    padding:0 272px;
 }
 
-h1{
+section{
+    margin:300px 0;
+}
+
+h1, button{
     font-family:serif;
 }
 
 h1#main_title{
     font-size:72px;
+}
+
+/* Special arrow beneath titles */
+.border, .full-border{
+    display:flex;
+}
+
+.cap{
+width:15px;
+border-bottom:15px solid white;
+border-bottom-left-radius:100%;
+border-top-left-radius:100%;
+}
+
+.cap2{  
+border:7.5px solid white;
+border-left-color:transparent;
+}
+
+.body{
+width:40px;
+border-bottom:15px solid white;
+}
+
+.arrow{
+border:7.5px solid white;
+border-bottom-color:transparent;
+border-top-color:transparent;
+border-right-color:transparent;
+}
+
+.arrow2{
+width:15px;
+border-bottom:15px solid white;
+border-bottom-right-radius:100%;
+border-top-right-radius:100%;
 }
 
 p{
@@ -44,17 +99,36 @@ button{
     background:#333;
     color:white;
     font-size:20px;
+    padding:20px;
+    width:260px;
+    border:none;
+}
+
+button:hover{
+    background:#777;
 }
 
 ul.faq li{
     background:white;
     color:black;
+    padding:20px;
+    margin:20px 0;    
+}
+
+ul.faq li, img{
+    border-radius: 5px;
 }
 
 ul.faq li div::before{
     content:'►';
 }
 
+section:not(#main_section){
+    text-align:left;
+}
+
 footer{
+    padding:25px;
     background:linear-gradient(white,#BC511B);
+    border-top:1px solid #999;
 } 
