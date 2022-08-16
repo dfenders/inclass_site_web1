@@ -15,11 +15,20 @@ ul {
 }
 
 header {    
-    height:100px;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    padding:25px;
+}
+
+header button{
+    display:none;
 }
 
 nav{
     padding:10px;
+    position:fixed;
 }
 
 nav li{
@@ -52,7 +61,7 @@ h1, button{
 }
 
 h1#main_title{
-    font-size:72px;
+    font-size:102px;
 }
 
 /* Special arrow beneath titles */
@@ -91,8 +100,11 @@ h1#main_title{
     border-top-right-radius:100%;
 }
 
+/***********************/
+
 p{
-    font-size:20px;
+    font-size:24px;
+    line-height:1.5;
 }
 
 button{
@@ -129,6 +141,10 @@ section:not(#main_section){
 
 footer{
     padding:25px;
-    background:linear-gradient(white,#BC511B);
+    background:linear-gradient(transparent,#BC511B);
     border-top:1px solid #999;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
 } 
