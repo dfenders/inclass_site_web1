@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     background:#BF5322;  
@@ -13,12 +17,34 @@ h1#main_title{
     font-size:72px;
 }
 
+section{
+    margin:300px 0;
+}
+
+section.main_section{
+    text-align:center;
+}
+
 a{
     color:white;
 }
 
 ul{
     list-style:none;
+    padding:0;
+    margin:0;
+}
+
+nav{
+    padding-left:15px;
+}
+
+nav li{
+    padding:15px;
+}
+
+nav li.active::before{
+    content:'►';
 }
 
 svg{
@@ -33,6 +59,14 @@ button{
     background:#333;
     color:white;
     font-size:20px;
+    padding:20px;
+    width:260px;
+    font-family:serif;
+    border:none;
+}
+
+button:hover{
+    background:#777;
 }
 
 header{
@@ -40,14 +74,64 @@ header{
 }
 
 main{
-    text-align:center;
+    padding: 0 272px;
 }
+
+/* Special arrow border */
+.border, .full-border{
+    display:flex;
+}
+
+.cap{
+    width:15px;
+    border-bottom:15px solid white;
+    border-bottom-left-radius:100%;
+    border-top-left-radius:100%;
+}
+
+.cap2{  
+    border:7.5px solid white;
+    border-left-color:transparent;
+}
+
+.body{
+    width:40px;
+    border-bottom:15px solid white;
+}
+
+.arrow{
+    border:7.5px solid white;
+    border-bottom-color:transparent;
+    border-top-color:transparent;
+    border-right-color:transparent;
+}
+
+.arrow2{
+    width:15px;
+    border-bottom:15px solid white;
+    border-bottom-right-radius:100%;
+    border-top-right-radius:100%;
+}
+
+/********/
 
 ul.faq li{
     background:white;
     color:black;
+    padding:20px;
+    margin-bottom:20px;    
+}
+
+ul.faq li, img{
+    border-radius:5px;
+}
+
+ul.faq li div::before{
+    content:'►';
 }
 
 footer{
     background:linear-gradient(white, #BF5322);    
+    padding:25px;
+    border-top:1px solid #999;
 }
