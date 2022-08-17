@@ -14,7 +14,7 @@ h1, h2, h3{
 }
 
 h1#main_title{
-    font-size:72px;
+    font-size:102px;
 }
 
 section{
@@ -35,8 +35,22 @@ ul{
     margin:0;
 }
 
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    padding:25px;
+}
+
+header button{
+    display:none;
+}
+
 nav{
     padding-left:15px;
+    position:fixed;
+    font-family:serif;
 }
 
 nav li{
@@ -52,7 +66,8 @@ svg{
 }
 
 p{
-    font-size:20px;
+    font-size:24px;
+    line-height:1.5;
 }
 
 button{
@@ -67,10 +82,6 @@ button{
 
 button:hover{
     background:#777;
-}
-
-header{
-    height:100px;
 }
 
 main{
@@ -131,7 +142,11 @@ ul.faq li div::before{
 }
 
 footer{
-    background:linear-gradient(white, #BF5322);    
+    background:linear-gradient(transparent, #BF5322);    
     padding:25px;
     border-top:1px solid #999;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
 }
