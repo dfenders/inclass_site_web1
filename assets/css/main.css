@@ -15,6 +15,7 @@ h1, h2, h3{
 
 h1#main_title{
     font-size:102px;
+    margin-bottom:0;
 }
 
 section{
@@ -22,7 +23,15 @@ section{
 }
 
 section.main_section{
+    margin-top:200px;
     text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+section.main_section p{
+    width:75%;
 }
 
 a{
@@ -41,6 +50,14 @@ header{
     left:0;
     right:0;
     padding:25px;
+    
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+header svg{
+    height:80px;
 }
 
 header button{
@@ -51,6 +68,11 @@ nav{
     padding-left:15px;
     position:fixed;
     font-family:serif;
+
+    top:0;
+    height:100vh;
+    display:flex;
+    align-items:center;
 }
 
 nav li{
@@ -91,6 +113,7 @@ main{
 /* Special arrow border */
 .border, .full-border{
     display:flex;
+    justify-content: center;
 }
 
 .cap{
@@ -149,4 +172,17 @@ footer{
     bottom:0;
     left:0;
     right:0;
+}
+
+footer ul{
+    display:flex;
+}
+
+footer ul li{
+    padding:0 20px;
+}
+
+footer ul li a{
+    text-decoration:none;
+    font-weight:bold;
 }
