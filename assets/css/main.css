@@ -83,10 +83,33 @@ section#main_section p{
     width:75%;
 }
 
-section:not(#about_section, #main_section) h1{
+section#about_section{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:60px;
+}
+
+section#about_section > div:first-of-type{
+    display:flex;
+    align-items: center;
+}
+
+section#about_section img{
+    width:100%;
+}
+
+section#about_section .full-border{
+    justify-content: flex-start;
+}
+
+section:not(#main_section) h1{
     text-align:center;
     font-size:64px;
     margin-bottom:20px;
+}
+
+#about_section h1{
+    text-align:left!important;
 }
 
 h1, button{
@@ -153,6 +176,12 @@ button{
 
 button:hover{
     background:#777;
+}
+
+.columns_3{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:60px;
 }
 
 ul.faq li{
