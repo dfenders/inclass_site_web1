@@ -199,6 +199,11 @@ ul.faq li div::before{
     content:'►';
 }
 
+ul.faq h3{
+    display: flex;
+    justify-content: space-between;
+}
+
 section:not(#main_section){
     text-align:left;
 }
@@ -224,4 +229,28 @@ footer ul li{
 footer ul li a{
     text-decoration:none;
     font-weight: bold;
+}
+
+@media (max-width: 770px){
+
+    header, footer{
+        position:static;
+    }
+
+    h1, h2, h3{
+        text-align:left!important;
+    }
+
+    nav{
+        display:none;
+    }
+
+    main{
+        padding:0 60px;
+    }
+
+    .columns_3, section#about_section{
+        grid-template-columns: 1fr;
+    }
+
 }
