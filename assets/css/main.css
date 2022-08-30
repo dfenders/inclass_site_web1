@@ -149,6 +149,41 @@ main{
 
 /********/
 
+section:not(.main_section) h1{
+    font-size:64px;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+section#about_section h1{
+    text-align:left!important;
+}
+
+section#about_section{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:60px;
+}
+
+section#about_section img{
+    width:100%;
+}
+
+section#about_section > div:first-of-type{
+    display:flex;
+    align-items: center;
+}
+
+section#about_section .full-border{
+    justify-content: flex-start;
+}
+
+.columns_3{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:60px;
+}
+
 ul.faq li{
     background:white;
     color:black;
