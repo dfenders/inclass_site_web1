@@ -1,11 +1,17 @@
+:root{
+    --fancy-border-colour:white;
+    --main-bg-colour:#BC511B;
+}
+
 * {
     box-sizing:border-box;
 }
 
 body {
     margin: 0; 
-    background:#BC511B;
+    background-color:var(--main-bg-colour);
     font-family:sans-serif;
+    transition:background-color 0.5s linear;
 }
 
 ul {
@@ -129,23 +135,23 @@ h1#main_title{
 
 .cap{
     width:15px;
-    border-bottom:15px solid white;
+    border-bottom:15px solid var(--fancy-border-colour);
     border-bottom-left-radius:100%;
     border-top-left-radius:100%;
 }
 
 .cap2{  
-    border:7.5px solid white;
+    border:7.5px solid var(--fancy-border-colour);
     border-left-color:transparent;
 }
 
 .body{
     width:40px;
-    border-bottom:15px solid white;
+    border-bottom:15px solid var(--fancy-border-colour);
 }
 
 .arrow{
-    border:7.5px solid white;
+    border:7.5px solid var(--fancy-border-colour);
     border-bottom-color:transparent;
     border-top-color:transparent;
     border-right-color:transparent;
@@ -153,7 +159,7 @@ h1#main_title{
 
 .arrow2{
     width:15px;
-    border-bottom:15px solid white;
+    border-bottom:15px solid var(--fancy-border-colour);
     border-bottom-right-radius:100%;
     border-top-right-radius:100%;
 }
@@ -205,7 +211,7 @@ section:not(#main_section){
 
 footer{
     padding:25px;
-    background:linear-gradient(transparent,#BC511B);
+    background:linear-gradient(transparent,var(--main-bg-colour));
     border-top:1px solid #999;
     position:fixed;
     bottom:0;
